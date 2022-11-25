@@ -1,0 +1,112 @@
+main {
+  position: relative;
+  min-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+video {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#logo {
+  position: absolute;
+  z-index: 10;
+  transform-style: preserve-3d;
+  width: 300px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation-name: logo;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+#img {
+  background-image: url("../assets/Main Logo.gif");
+  background-position: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 10;
+  
+  width: 75%;
+  height: 100%;
+}
+#menu {
+  position: absolute;
+  max-width: max-content;
+  max-height: max-content;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 80px;
+  margin: auto;
+  padding-top: 300px;
+  z-index: 9;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  opacity: 0;
+  transition:opacity ease-in 0.8s;
+  animation-name: menu;
+  animation-duration: .3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 1.7rem;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 2px 0px #000;
+  -webkit-text-stroke: 2px #000;
+  position: relative;
+  
+}
+a:before{
+  content: attr(data-name);
+  position:absolute;
+  color: #fff;
+  top:0;
+  left:0;
+  height:100%;
+  overflow:hidden;
+  transition:all 0.5s;
+}
+a:hover:before{
+  height :0%;
+  transform: scale(1.2);
+}
+
+
+li {
+  margin: 8% 0;
+}
+li:hover {
+  transform: scale(1.2);
+}
+
+
+/* animation */
+@keyframes logo {
+  0% {
+    transform: translate(-50%,350%) scale(3);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

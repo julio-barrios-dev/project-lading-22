@@ -1,0 +1,14 @@
+{
+  "name": "alect-meza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Barrios <julio.barrios.9618@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.75.0"
+  }
+}
