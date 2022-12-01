@@ -15,8 +15,7 @@
   <body>
     <main>
       <img id="logo" src="./assets/Main-Logo.gif" alt=""/>
-      <!-- <div id="img"></div> -->
-      <video autoplay muted playsinline loop id="autoplay" >
+      <video autoplay muted playsinline loop  id="play-video" >
         <source src="./assets/background-video.webm" type="video/webm" />
         <source src="./assets/background-video.mp4" type="video/mp4" />
       </video>
@@ -51,9 +50,12 @@
     </main>
     <script>
       window.onload = function() {
-        document.getElementById("autoplay").play();
+        document.getElementById("play-video").play();
         document.getElementById("modal").remove();
       }
+      window.addEventListener("load", () => {
+        document.getElementById("play-video").play();
+      })
     </script>
   </body>
 </html>
