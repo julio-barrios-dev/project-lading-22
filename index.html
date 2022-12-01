@@ -49,6 +49,11 @@
         <h2>Loading...</h2>
       </div>
     </main>
-    <script src="./index.js" />
+    <script>
+      window.onload = function() {
+        document.getElementById("autoplay").play();
+        document.getElementById("modal").remove();
+      }
+    </script>
   </body>
 </html>
