@@ -90,6 +90,24 @@ li {
 li:hover {
   transform: scale(1.2);
 }
+#modal {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-color: #000;
+  z-index: 20;
+}
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;  
+  margin: 0 auto;
+
+}
 
 
 /* animation */

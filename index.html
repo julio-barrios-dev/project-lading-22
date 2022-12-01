@@ -16,7 +16,7 @@
     <main>
       <img id="logo" src="./assets/Main-Logo.gif" alt=""/>
       <!-- <div id="img"></div> -->
-      <video autoplay="autoplay" muted="muted" loop="loop" playsinline="true">
+      <video autoplay muted playsinline loop id="autoplay" >
         <source src="./assets/background-video.webm" type="video/webm" />
         <source src="./assets/background-video.mp4" type="video/mp4" />
       </video>
@@ -44,6 +44,9 @@
             <a href="https://marsadrecords.com/archives.ev/" target="_blank" rel="noopener noreferrer" data-name="Shop">Shop</a>
           </li>
         </ul>
+      </div>
+      <div id="modal">
+        <h2>Loading...</h2>
       </div>
     </main>
     <script src="./index.js" />
